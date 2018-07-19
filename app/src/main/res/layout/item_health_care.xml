@@ -2,7 +2,7 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginLeft="@dimen/margin_medium_2"
     android:layout_marginRight="@dimen/margin_medium_2"
     android:layout_marginTop="@dimen/margin_medium_2"
@@ -12,16 +12,16 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white_full"
-        android:layout_marginBottom="@dimen/margin_card_medium">
+        android:layout_marginBottom="@dimen/margin_card_medium"
+        android:background="@color/white_full">
 
 
         <TextView
             android:id="@+id/tvTitleHealthCare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margin_medium_2"
-            android:layout_marginRight="@dimen/margin_medium_2"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
             android:text="Health Care"
             android:textColor="@color/black_full"
             android:textSize="@dimen/text_heading_1x" />
@@ -108,15 +108,14 @@
             android:layout_alignLeft="@id/tvTitleHealthCare"
             android:layout_alignRight="@id/tvTitleHealthCare"
             android:layout_below="@id/cvHealthCare"
+            android:layout_marginBottom="@dimen/margin_card_medium"
             android:layout_marginTop="@dimen/margin_medium"
-            android:text="Short Description"
-            android:textColor="@color/black_full"
-            android:textSize="@dimen/text_regular_2x"
             android:ellipsize="end"
             android:lineSpacingMultiplier="1.2"
             android:maxLines="3"
-            android:layout_marginBottom="@dimen/margin_card_medium"
-            />
+            android:text="Short Description"
+            android:textColor="@color/black_full"
+            android:textSize="@dimen/text_regular_2x" />
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>
