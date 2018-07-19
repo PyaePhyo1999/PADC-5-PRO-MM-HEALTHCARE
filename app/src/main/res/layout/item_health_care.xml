@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_medium_2"
+    android:layout_marginRight="@dimen/margin_medium_2"
+    android:layout_marginTop="@dimen/margin_medium_2"
+    app:cardElevation="@dimen/margin_medium">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_full"
+        android:layout_marginBottom="@dimen/margin_card_medium">
+
+
+        <TextView
+            android:id="@+id/tvTitleHealthCare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            android:text="Health Care"
+            android:textColor="@color/black_full"
+            android:textSize="@dimen/text_heading_1x" />
+
+
+        <TextView
+            android:id="@+id/tvPostedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvTitleHealthCare"
+            android:layout_alignRight="@id/tvTitleHealthCare"
+            android:layout_below="@id/tvTitleHealthCare"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="2016"
+            android:textColor="@color/black_full"
+            android:textSize="@dimen/text_regular_2x"
+
+            />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvAuthor"
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
+            android:layout_alignLeft="@id/tvTitleHealthCare"
+            android:layout_below="@id/tvPostedDate"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/ivAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_health_care" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvAuthorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/cvAuthor"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_toRightOf="@id/cvAuthor"
+            android:text="Tech Talk"
+            android:textColor="@color/black_full"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/tvInfoType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvAuthorName"
+            android:layout_below="@id/tvAuthorName"
+            android:layout_toRightOf="@id/cvAuthor"
+            android:padding="@dimen/margin_small"
+            android:text="Article"
+            android:textColor="@color/black_full"
+            android:textSize="@dimen/text_regular" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvHealthCare"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/health_care_image"
+            android:layout_below="@id/cvAuthor"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <ImageView
+                android:id="@+id/ivHealthCare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_health_care" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvShortDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvTitleHealthCare"
+            android:layout_alignRight="@id/tvTitleHealthCare"
+            android:layout_below="@id/cvHealthCare"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="Short Description"
+            android:textColor="@color/black_full"
+            android:textSize="@dimen/text_regular_2x"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="3"
+            android:layout_marginBottom="@dimen/margin_card_medium"
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+
